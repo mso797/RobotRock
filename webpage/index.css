@@ -1,0 +1,45 @@
+body {
+    background-color: lightblue;
+	background-image: url("http://hobbyrobo.com/wp-content/uploads/2014/01/arduinorx_by_zuggamasta-d34m2lr.jpg");
+	background-size: cover;
+}
+/*Navbar things*/
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+li {
+	float: left;
+}
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+li a:hover:not(.active) {
+	background-color: #111111;
+}
+.active {
+	background-color: black;
+}
+/*Button for input*/
+.button {
+    background-color: #0066cc;
+    border: 1px solid white;
+    color: white;
+	text-decoration: none;
+    padding: 16px 32px;
+    text-align: center;
+	align: center;
+    display: inline-block;
+    font-size: 16px;
+	border-radius: 8px;
+}
+.button:hover {
+	background-color: #003399;
+}
