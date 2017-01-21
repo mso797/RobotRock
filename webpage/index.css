@@ -27,7 +27,7 @@ li a:hover:not(.active) {
 .active {
 	background-color: black;
 }
-/*Button for input*/
+/*Buttons for input*/
 .button {
     background-color: #0066cc;
     border: 1px solid white;
@@ -42,4 +42,18 @@ li a:hover:not(.active) {
 }
 .button:hover {
 	background-color: #003399;
+}
+/*webcam*/
+#cameraframe{
+	width: 600px;
+	height: 600px;
+	overflow: hidden;
+	position: relative;
+}
+#webcam{
+	position: absolute;
+	top: -100px;
+	left: -300px;
+	width: 1280px;
+	height: 1200px;
 }
