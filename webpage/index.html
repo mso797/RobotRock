@@ -1,19 +1,26 @@
 <!DOCTYPE html>
+<!--function called write, file is write_to_file.txt-->
 <html lang="en">
 <head>
-	<title>daftpunk</title>
+	<title>Pretzel</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link type="text/css" rel="stylesheet" href="index.css"/>
 </head>
 <body>
-	<h2></h2>
+
 	<div id="navbar">
 		<ul>
-			<li><a href = index.html></a>Homepage</li>
-			<li><a href = about.html></a>About</li>
+			<li><a href="index.html">Input</a></li>
+			<li><a href="about.html">About</a></li>
 		</ul>
 	</div>
-	<p>test</p>
+	<?php require 'write_to_file.php';?>
+	<p class="button" onclick="document.write('<?php write('w') ?>');">Forwards</p>
+	<div></div>
+	<p class="button" onclick="document.write('<?php write('a') ?>');">Left</p>
+	<p class="button" onclick="document.write('<?php write('d') ?>');">Right</p>
+	<div></div>
+	<p class="button" onclick="document.write('<?php write('s') ?>');">Backwards</p>
 </body>
 </html>
