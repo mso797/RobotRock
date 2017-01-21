@@ -1,26 +1,24 @@
 <!DOCTYPE html>
-<!--function called write, file is write_to_file.txt-->
-<html lang="en">
-<head>
-	<title>Pretzel</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link type="text/css" rel="stylesheet" href="index.css"/>
-</head>
-<body>
-
-	<div id="navbar">
-		<ul>
-			<li><a href="index.html">Input</a></li>
-			<li><a href="about.html">About</a></li>
-		</ul>
-	</div>
-	<?php require 'write_to_file.php';?>
-	<p class="button" onclick="document.write('<?php write('w') ?>');">Forwards</p>
-	<div></div>
-	<p class="button" onclick="document.write('<?php write('a') ?>');">Left</p>
-	<p class="button" onclick="document.write('<?php write('d') ?>');">Right</p>
-	<div></div>
-	<p class="button" onclick="document.write('<?php write('s') ?>');">Backwards</p>
-</body>
+<html lang='en'>
+	<head>
+		<title>Pretzel</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link type="text/css" rel="stylesheet" href="index.css"/>
+		<script src="jquery-3.1.1.min.js"></script>
+		<script src="index.js"></script>
+		<script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+	</head>
+	<body>
+		<div id="navbar">
+			<ul>
+				<li><a href="index.html">Input</a></li>
+				<li><a href="about.html">About</a></li>
+			</ul>
+		</div>
+		<a href='write.php?val=w' target="_blank"><input type="submit" value=""><img src="assets/up.png" class="button"></a>
+		<a href='write.php?val=a' target="_blank"><input type="submit" value=""><img src="assets/left.png" class="button"></a>
+		<a href='write.php?val=d' target="_blank"><input type="submit" value=""><img src="assets/right.png" class="button"></a>
+		<a href='write.php?val=s' target="_blank"><input type="submit" value=""><img src="assets/down.png" class="button"></a>
+	</body>
 </html>
