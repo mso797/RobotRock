@@ -29,7 +29,10 @@ li a:hover:not(.active) {
 }
 
 /*Instructions container*/
-.instructions{
+section {
+	padding-top: 6%;
+}
+.instructions {
 	margin-top: 30px;
 	height: 50vh;
 	background-color: rgba(0,0,0,0.8);
@@ -39,7 +42,7 @@ li a:hover:not(.active) {
 	border: 2px solid white;
 	width: 50%;
 }
-h2{
+h2 {
 	text-align:center;
 	color: white;
 }
