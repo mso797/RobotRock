@@ -1,12 +1,11 @@
 html {
-    height:100%;
+	height:100%;
 }
-
 body {
     background-color: lightblue;
 	background-image: url("http://hobbyrobo.com/wp-content/uploads/2014/01/arduinorx_by_zuggamasta-d34m2lr.jpg");
 	background-size: cover;
-    height:100%;
+	height:100%;
 }
 /*Navbar things*/
 ul {
@@ -36,17 +35,21 @@ li a:hover:not(.active) {
 .button {
     background-color: #0066cc;
     border: 1px solid white;
-    color: white;
-	text-decoration: none;
     padding: 16px 32px;
     display: inline-block;
-    font-size: 16px;
 	border-radius: 8px;
 	height: 40px;
 	width: 40px;
 }
 .button:hover {
 	background-color: #003399;
+}
+/*red for the stop button!*/
+#stop {
+	background-color: #ff0000;
+}
+#stop:hover {
+	background-color: #990000;
 }
 /*webcam*/
 #cameraframe{
