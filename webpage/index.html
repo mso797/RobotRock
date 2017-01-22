@@ -5,24 +5,35 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link type="text/css" rel="stylesheet" href="index.css"/>
-		<script src="jquery-3.1.1.min.js"></script>
-		<script src="index.js"></script>
-		<script type="text/javascript" src="https://js.stripe.com/v2/"></script>
 	</head>
 	<body>
 		<div id="navbar">
 			<ul>
 				<li><a href="index.html">Input</a></li>
 				<li><a href="about.html">About</a></li>
-			</ul>
+			</ul> 
 		</div>
-		<a href='write.php?val=w' target="_blank"><input type="submit" value=""><img src="assets/up.png" class="button"></a>
-		<a href='write.php?val=a' target="_blank"><input type="submit" value=""><img src="assets/left.png" class="button"></a>
-		<a href='write.php?val=d' target="_blank"><input type="submit" value=""><img src="assets/right.png" class="button"></a>
-		<a href='write.php?val=s' target="_blank"><input type="submit" value=""><img src="assets/down.png" class="button"></a>
-		<a href='http://172.31.195.80:8080/photo.jpg' target="_blank"><img src="assets/camera.png" class="button"></a>
-		<div id="cameraframe">
-			<iframe src="http://172.31.195.80:8080/" id="webcam" scrolling="no"></iframe>
-		</div>
+        
+        <section id="body">
+            <article id="left">
+                <a href='write.php?val=w' target="_blank"><img src="assets/up.png" class="button"></a>
+                <a href='write.php?val=a' target="_blank"><img src="assets/left.png" class="button"></a>
+                <a href='write.php?val=d' target="_blank"><img src="assets/right.png" class="button"></a>
+                <a href='write.php?val=s' target="_blank"><img src="assets/down.png" class="button"></a>
+                <a href='http://172.31.194.32:8080/photo.jpg' target="_blank" id="cam"><img src="assets/camera.png" class="button"></a>
+            </article>
+
+            <article id="right">
+                <div id="cameraframe">
+                    <iframe src="http://172.31.194.32:8080/" id="webcam" scrolling="yes"></iframe>
+                </div>
+            </article>
+        </section>
+        
+        <script type="text/javascript">           
+                /*var IP = prompt("What is the phone IP address?");
+                document.getElementById("cam").getAttribute("href").value = "http://" + IP + "/photo.jpg";
+                document.getElementById("webcam").getAttribute("src").value = "http://" + IP + "/";*/
+        </script>
 	</body>
 </html>
